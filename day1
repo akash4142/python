@@ -1,0 +1,39 @@
+def addition(num1, num2):
+    return num1 + num2
+
+def subtraction(num1, num2):
+    return num1 - num2
+
+def multiply(num1, num2):
+    return num1 * num2
+
+def divide(num1, num2):
+    return num1 / num2
+
+while True:
+    print("Hello to the calculator")
+    print("1. 1 for addition\n2. 2 for subtraction\n3. 3 for multiplication\n4. 4 for division\n5. 5 to exit")
+
+    choice = int(input("Enter your choice: "))
+    
+    if choice == 5:
+        print("Exiting the calculator.")
+        break  # Exit the loop
+
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    
+    if choice == 1:
+        result = addition(num1, num2)
+        print("The addition is", result)
+    elif choice == 2:
+        result = subtraction(num1, num2)
+        print("The subtraction is", result)
+    elif choice == 3:
+        result = multiply(num1, num2)
+        print("The multiplication is", result)
+    elif choice == 4:
+        result = divide(num1, num2)
+        print("The division is", result)
+    else:
+        print("Invalid choice")
