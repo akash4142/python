@@ -1,0 +1,13 @@
+my_list= [12,43,13,46,21,76,23]
+size = len(my_list)
+
+def sorting(my_list,size):
+    for i in range(0,size-1):
+        for j in range(0,size-1):
+            if my_list[j] > my_list[j+1]:
+                my_list[j],my_list[j+1] = my_list[j+1],my_list[j]
+            
+    print(my_list)
+
+
+sorting(my_list,size)            
