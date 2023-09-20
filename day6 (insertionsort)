@@ -1,0 +1,16 @@
+my_list = [12,43,23,54,27,97,10,2]
+size = len(my_list)
+
+def insertionsort(my_list,size):
+    for i in range(size):
+        curr = my_list[i]
+        
+        j=i
+        while j>0 and my_list[j-1]>curr:
+            my_list[j]=my_list[j-1]
+            j -= 1
+        my_list[j]=curr
+
+
+insertionsort(my_list,size)
+print(my_list)
