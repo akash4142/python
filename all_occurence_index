@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int* linearsearch (int arr[],int size,int target){
+    int* arr1 = new int[size];
+    int j=0;
+    for(int i=0;i<size-1 ;i++){
+        if(arr[i]==target){
+            arr1[j]=i;
+            j++;
+        }
+    }
+    arr1[j]=-1;
+    return arr1;
+}
+
+int main(){
+    int arr[]={12,32,432,123,234,432,34};
+    int size=sizeof(arr)/sizeof(arr[1]);
+    int target=432;
+    int* result = linearsearch(arr,size,target);
+    cout<<"the result is at indices :";
+    for (int i=0;result[i]!= -1;i++){
+        cout<<result[i]<<" ";
+    }
+    delete[] result;
+    return 0;
+}
