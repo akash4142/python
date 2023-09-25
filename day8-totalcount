@@ -1,0 +1,14 @@
+list = [12,32,43,12,32,54,65]
+size = len(list)
+target=12
+
+
+def total_count(arr,size,target):
+    count=0
+    for i in range(0,size-1):
+        if(arr[i]==target):
+            count+=1;
+    return count;
+    
+count=find_all_occurence(list,size,target)
+print('The total number of ',count)
