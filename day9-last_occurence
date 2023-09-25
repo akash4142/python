@@ -1,0 +1,14 @@
+list = [12,32,43,12,32,54,65,12]
+size = len(list)
+target=12
+
+
+def total_count(arr,size,target):
+    index=-1
+    for i in range(0,size):
+        if(arr[i]==target):
+            index=i;
+    return index;
+    
+index=total_count(list,size,target)
+print('The last index is at : ',index)
