@@ -1,0 +1,13 @@
+
+list = [12,32,43,12,32,54,65,12]
+size = len(list)
+
+
+def sum_of_array(arr,size):
+    sum=0
+    for i in range(0,size):
+        sum+=arr[i]
+    return sum;
+    
+sum=sum_of_array(list,size)
+print('The sum of the list is  : ',sum)
