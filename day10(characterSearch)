@@ -1,0 +1,13 @@
+string = 'ykash'
+target= 'a'
+
+def characterSearch(string,target):
+    size= len(string)
+    for i in range(0,size):
+        if(target==string[i]):
+            return i;
+    return -1;
+        
+        
+index= characterSearch(string,target)
+print(index)
