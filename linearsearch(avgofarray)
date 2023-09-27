@@ -1,0 +1,14 @@
+list = [12,32,43,12,32,54,65,12]
+size = len(list)
+
+
+def avg_of_array(arr,size):
+    sum=0
+    avg=0
+    for i in range(0,size):
+        sum+=arr[i]
+    avg=sum/size
+    return avg;
+    
+avg=avg_of_array(list,size)
+print('The average of the list is  : ',avg)
