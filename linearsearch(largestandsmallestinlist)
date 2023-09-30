@@ -1,0 +1,17 @@
+list = [12,32,43,12,32,54,65,12]
+size = len(list)
+
+
+def largest_and_smallest(arr,size):
+    smallest = arr[0]
+    largest=arr[0]
+    for i in range(0,size):
+        if(arr[i]< smallest):
+            smallest = arr[i]
+        elif (arr[i]>largest):
+            largest=arr[i]
+    return largest,smallest
+    
+largest,smallest=largest_and_smallest(list,size)
+print('The smallest of the list is  : ',smallest)
+print('The largest of the list is : ' , largest)
