@@ -1,0 +1,22 @@
+list = [6,7,8,3,3,3,4,5]
+target = 3
+size = len(list)
+
+def first_occurence(arr, target,size):
+    start = 0
+    end = size -1;
+    index = -1
+    while start < end:
+        mid =(start+end)//2
+        if arr[mid]==target:
+            index = mid
+            end = start +1;
+        elif arr[mid]>target:
+            end = mid -1;
+        else:
+            start = mid+1;
+            
+    return index
+
+result=first_occurence(list,target,size)
+print(result)
